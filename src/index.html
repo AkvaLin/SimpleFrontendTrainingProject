@@ -6,8 +6,35 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <! -- Подключение стилей и скриптов -->
+    <link rel="stylesheet" href="main.css">
+    <script src="app.js" defer></script>
+    <script src="libs/rain.js" defer></script>
+    <! -- defer говорит о том, что скрипт должен сработать только после загрузки всего документа -->
 </head>
 <body>
+
+    <div class = "logo" style="background-image: url(img/logo.svg);"></div>
+    <! -- Инлайновый стиль позволяет использовать backend для изменения внешего вида -->
+
+    <section class="layers">
+        <div class="layers__container">
+            <div class="layers__item layer-1" style="background-image: url(img/layer-1.jpg);"></div>
+            <div class="layers__item layer-2" style="background-image: url(img/layer-2.png);"></div>
+            <div class="layers__item layer-3">
+                <div class="hero-content">
+                    <h1>Natural Forest <span> HTML / CSS </span></h1>
+                    <div class="hero-content__p">creating a beautiful 3D website with 'lens effect'</div>
+                    <button class="button-start">Start Learning</button>
+                </div>
+            </div>
+            <div class="layers__item layer-4">
+                <canvas class = "rain"></canvas>
+            </div>
+            <div class="layers__item layer-5" style="background-image: url(img/layer-5.png);"></div>
+            <div class="layers__item layer-6" style="background-image: url(img/layer-6.png);"></div>
+        </div>
+    </section>
 
 </body>
 </html>
